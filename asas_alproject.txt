@@ -1,0 +1,2104 @@
+look you are profisional in code editing and AI model formation , at the same time your ability in correction the irregularity in the file you see the general schematic diagram or tree of my project help to finish it  and regarding the above project i have these file and code 
+But your replaying me in Arabic to understand well and be ware its a huge project so dont herry and the quality of project is the priority , and step by step , after each step is finish tested then we shift to new step 
+the general tree of project was 
+
+problem_ai_advisor/
+├── 📁 data/
+│   ├── raw/                    # البيانات الخام من قاعدة البيانات
+│   ├── processed/              # البيانات المعالجة
+│   └── models/                 # النماذج المحفوظة
+├── 📁 src/
+│   ├── __init__.py
+│   ├── 📁 data_processing/
+│   │   ├── __init__.py
+│   │   ├── database_connector.py    # الاتصال بقاعدة البيانات
+│   │   ├── data_extractor.py        # استخراج البيانات
+│   │   └── data_preprocessor.py     # معالجة البيانات
+│   ├── 📁 models/
+│   │   ├── __init__.py
+│   │   ├── clustering_model.py      # نموذج التجميع
+│   │   ├── topic_modeling.py        # تحليل الموضوعات
+│   │   └── pattern_mining.py        # استخراج الأنماط
+│   ├── 📁 analysis/
+│   │   ├── __init__.py
+│   │   ├── problem_analyzer.py      # تحليل المشاكل
+│   │   └── recommendation_engine.py # محرك التوصيات
+│   └── 📁 utils/
+│       ├── __init__.py
+│       ├── text_processing.py       # معالجة النصوص
+│       └── visualization.py         # الرسوم البيانية
+├── 📁 notebooks/
+│   ├── 01_data_exploration.ipynb    # استكشاف البيانات
+│   ├── 02_model_training.ipynb      # تدريب النماذج
+│   └── 03_results_analysis.ipynb    # تحليل النتائج
+├── 📁 api/
+│   ├── __init__.py
+│   ├── main.py                      # FastAPI application
+│   └── endpoints.py                 # API endpoints
+├── 📁 frontend/
+│   ├── dashboard.py                 # Streamlit dashboard
+│   └── components/
+├── 📁 tests/
+│   ├── __init__.py
+│   ├── test_models.py
+│   └── test_data_processing.py
+├── 📁 config/
+│   ├── __init__.py
+│   ├── database_config.py
+│   └── model_config.py
+├── requirements.txt                 # متطلبات المشروع
+├── setup.py                        # إعداد المشروع
+├── README.md                       # وثائق المشروع
+└── main.py                         # النقطة الرئيسية لتشغيل المشروع
+
+the database that i used are 
+
+C:\Users\pc\PycharmProjects\pythonProject\problem_management_ststem\instance>dir
+ Volume in drive C is OS
+ Volume Serial Number is BE2A-ADAB
+
+ Directory of C:\Users\pc\PycharmProjects\pythonProject\problem_management_ststem\instance
+
+06/04/2025  08:56 AM    <DIR>          .
+06/04/2025  10:42 AM    <DIR>          ..
+06/04/2025  08:56 AM            81,920 problem_management.db
+               1 File(s)         81,920 bytes
+               2 Dir(s)  221,178,884,096 bytes free
+
+C:\Users\pc\PycharmProjects\pythonProject\problem_management_ststem\instance>
+
+# الخوارزميات المناسبة:
+- K-Means Clustering
+- DBSCAN (للعثور على مجموعات غير منتظمة)
+- Hierarchical Clustering
+- Gaussian Mixture Models
+# الخوارزميات:
+- Latent Dirichlet Allocation (LDA)
+- Non-Negative Matrix Factorization (NMF)
+- BERTopic (الأحدث والأكثر دقة)
+# الخوارزميات:
+- Association Rules (Apriori Algorithm)
+- Sequential Pattern Mining
+- Markov Chains
+# 1. معالجة النصوص
+- تنظيف البيانات النصية
+- تحويل النصوص إلى vectors باستخدام TF-IDF أو BERT
+- استخراج الكلمات المفتاحية
+
+# 2. هندسة الميزات
+- حساب مدة حل المشكلة
+- معدل نجاح الحلول لكل مجال
+- تكلفة الحلول المتوسطة
+- مستوى التعقيد مقابل الوقت المطلوب
+# 1. نموذج التجميع الرئيسي
+from sklearn.cluster import KMeans
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+# 2. نموذج تحليل الموضوعات
+from sklearn.decomposition import LatentDirichletAllocation
+
+# 3. نموذج تحليل الأنماط
+from mlxtend.frequent_patterns import apriori
+
+النصائح التي سيقدمها النموذج للإدارة:
+1. تصنيف المشكلة الجديدة
+
+"هذه المشكلة تشبه المجموعة رقم X التي تحتاج عادة إلى Y أيام للحل"
+"المشاكل المشابهة تكلف في المتوسط Z دولار"
+
+2. توصيات الحلول
+
+"المشاكل المشابهة حُلت بنجاح باستخدام هذه الطرق..."
+"معدل نجاح الحلول في هذا المجال هو X%"
+
+3. تحليل المخاطر
+
+"المشاكل في هذه المجموعة لها مخاطر مشتركة مثل..."
+"الحلول الناجحة عادة تتجنب..."
+
+4. تخصيص الموارد
+
+"هذا النوع من المشاكل يحتاج فريق من X أشخاص"
+"الميزانية المتوقعة بناءً على المشاكل المشابهة"
+
+التنفيذ العملي:
+هل تريد مني إنشاء نموذج أولي يوضح كيفية:
+
+تجميع المشاكل المتشابهة
+استخراج الأنماط المخفية
+بناء نظام التوصيات للإدارة
+
+# Data Processing
+pandas>=1.5.0
+numpy>=1.21.0
+sqlalchemy>=1.4.0
+psycopg2-binary>=2.9.0  # for PostgreSQL
+pymysql>=1.0.0          # for MySQL
+
+# Machine Learning
+scikit-learn>=1.1.0
+xgboost>=1.6.0
+lightgbm>=3.3.0
+
+# Text Processing
+nltk>=3.7
+spacy>=3.4.0
+transformers>=4.20.0
+sentence-transformers>=2.2.0
+
+# Topic Modeling
+gensim>=4.2.0
+bertopic>=0.11.0
+
+# Clustering & Pattern Mining
+hdbscan>=0.8.0
+mlxtend>=0.20.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.9.0
+wordcloud>=1.8.0
+
+# API & Dashboard
+fastapi>=0.80.0
+streamlit>=1.12.0
+uvicorn>=0.18.0
+
+# Utilities
+python-dotenv>=0.20.0
+pydantic>=1.9.0
+tqdm>=4.64.0
+joblib>=1.1.0
+
+# config/database_config.py
+DATABASE_CONFIG = {
+    'host': 'localhost',
+    'port': 5432,
+    'database': 'problem_management',
+    'username': 'your_username',
+    'password': 'your_password'
+}
+
+# Tables mapping
+TABLES = {
+    'problems': 'problem',
+    'solutions': 'proposed_solution',
+    'implementations': 'implementation_plan',
+    'kpis': 'kpi_measurement',
+    'lessons': 'lesson_learned'
+}
+
+# config/model_config.py
+MODEL_CONFIG = {
+    'clustering': {
+        'n_clusters': 8,
+        'algorithm': 'kmeans',
+        'features': ['title', 'description_initial', 'domain', 'complexity_level']
+    },
+    'topic_modeling': {
+        'n_topics': 10,
+        'method': 'bertopic',
+        'language': 'multilingual'  # supports Arabic
+    },
+    'text_processing': {
+        'max_features': 1000,
+        'min_df': 2,
+        'max_df': 0.95,
+        'ngram_range': (1, 2)
+    }
+}
+
+# src/data_processing/database_connector.py
+import pandas as pd
+import sqlalchemy
+from sqlalchemy import create_engine, text
+from typing import Dict, List, Optional
+import logging
+from config.database_config import DATABASE_CONFIG, TABLES
+
+class DatabaseConnector:
+    """
+    كلاس للاتصال بقاعدة البيانات واستخراج البيانات
+    """
+    
+    def __init__(self, config: Dict = None):
+        """
+        تهيئة الاتصال بقاعدة البيانات
+        """
+        self.config = config or DATABASE_CONFIG
+        self.engine = None
+        self.connect()
+        
+    def connect(self):
+        """
+        إنشاء اتصال بقاعدة البيانات
+        """
+        try:
+            # إنشاء connection string
+            conn_string = f"postgresql://{self.config['username']}:{self.config['password']}@{self.config['host']}:{self.config['port']}/{self.config['database']}"
+            
+            self.engine = create_engine(conn_string)
+            logging.info("تم الاتصال بقاعدة البيانات بنجاح")
+            
+        except Exception as e:
+            logging.error(f"خطأ في الاتصال بقاعدة البيانات: {e}")
+            raise
+    
+    def extract_problems_data(self, limit: int = None) -> pd.DataFrame:
+        """
+        استخراج بيانات المشاكل مع المعلومات المرتبطة
+        """
+        query = """
+        SELECT 
+            p.id as problem_id,
+            p.title,
+            p.description_initial,
+            p.domain,
+            p.complexity_level,
+            p.date_identified,
+            p.date_closed,
+            p.status,
+            p.stakeholders_involved,
+            p.initial_impact_assessment,
+            p.problem_source,
+            p.refined_problem_statement_final,
+            p.sentiment_score,
+            p.sentiment_label,
+            p.problem_tags,
+            p.ai_generated_summary,
+            
+            -- من جدول فهم المشكلة
+            pu.active_listening_notes,
+            pu.key_questions_asked,
+            pu.initial_data_sources,
+            pu.initial_hypotheses,
+            pu.stakeholder_feedback_initial,
+            
+            -- من جدول تحليل الأسباب
+            ca.data_collection_methods_deep,
+            ca.data_analysis_techniques_used,
+            ca.key_findings_from_analysis,
+            
+            -- معلومات الحل المختار
+            cs.justification_for_choice,
+            cs.approval_status,
+            cs.date_chosen,
+            
+            -- معلومات الحل المقترح
+            ps.solution_description,
+            ps.generation_method,
+            ps.estimated_cost,
+            ps.estimated_time_to_implement,
+            ps.potential_benefits,
+            ps.potential_risks,
+            
+            -- معلومات التنفيذ
+            ip.plan_description,
+            ip.overall_status as implementation_status,
+            ip.start_date_planned,
+            ip.end_date_planned,
+            ip.start_date_actual,
+            ip.end_date_actual,
+            ip.overall_budget,
+            ip.key_personnel,
+            
+            -- الدروس المستفادة
+            ll.what_went_well,
+            ll.what_could_be_improved,
+            ll.recommendations_for_future,
+            ll.key_takeaways
+            
+        FROM problem p
+        LEFT JOIN problem_understanding pu ON p.id = pu.problem_id
+        LEFT JOIN cause_analysis ca ON p.id = ca.problem_id
+        LEFT JOIN chosen_solution cs ON p.id = cs.problem_id
+        LEFT JOIN proposed_solution ps ON cs.proposed_solution_id = ps.id
+        LEFT JOIN implementation_plan ip ON cs.id = ip.chosen_solution_id
+        LEFT JOIN lesson_learned ll ON p.id = ll.problem_id
+        """
+        
+        if limit:
+            query += f" LIMIT {limit}"
+            
+        try:
+            df = pd.read_sql(query, self.engine)
+            logging.info(f"تم استخراج {len(df)} مشكلة من قاعدة البيانات")
+            return df
+            
+        except Exception as e:
+            logging.error(f"خطأ في استخراج البيانات: {e}")
+            raise
+    
+    def extract_kpi_data(self) -> pd.DataFrame:
+        """
+        استخراج بيانات مؤشرات الأداء
+        """
+        query = """
+        SELECT 
+            sk.chosen_solution_id,
+            sk.kpi_name,
+            sk.kpi_description,
+            sk.target_value,
+            sk.current_value_baseline,
+            sk.measurement_unit,
+            sk.measurement_frequency,
+            km.measurement_date,
+            km.actual_value,
+            km.notes
+        FROM solution_kpi sk
+        LEFT JOIN kpi_measurement km ON sk.id = km.kpi_id
+        ORDER BY sk.chosen_solution_id, km.measurement_date
+        """
+        
+        try:
+            df = pd.read_sql(query, self.engine)
+            logging.info(f"تم استخراج {len(df)} قياس مؤشر أداء")
+            return df
+            
+        except Exception as e:
+            logging.error(f"خطأ في استخراج بيانات المؤشرات: {e}")
+            raise
+    
+    def extract_root_causes(self) -> pd.DataFrame:
+        """
+        استخراج بيانات الأسباب الجذرية
+        """
+        query = """
+        SELECT 
+            prc.analysis_id,
+            ca.problem_id,
+            prc.cause_description,
+            prc.evidence_supporting_cause,
+            prc.validation_status,
+            prc.impact_of_cause
+        FROM potential_root_cause prc
+        JOIN cause_analysis ca ON prc.analysis_id = ca.id
+        """
+        
+        try:
+            df = pd.read_sql(query, self.engine)
+            logging.info(f"تم استخراج {len(df)} سبب جذري")
+            return df
+            
+        except Exception as e:
+            logging.error(f"خطأ في استخراج الأسباب الجذرية: {e}")
+            raise
+    
+    def get_database_stats(self) -> Dict:
+        """
+        الحصول على إحصائيات قاعدة البيانات
+        """
+        stats = {}
+        
+        try:
+            # عدد المشاكل
+            result = pd.read_sql("SELECT COUNT(*) as count FROM problem", self.engine)
+            stats['total_problems'] = result['count'].iloc[0]
+            
+            # عدد الحلول
+            result = pd.read_sql("SELECT COUNT(*) as count FROM proposed_solution", self.engine)
+            stats['total_solutions'] = result['count'].iloc[0]
+            
+            # عدد المشاكل المحلولة
+            result = pd.read_sql("SELECT COUNT(*) as count FROM problem WHERE status = 'closed'", self.engine)
+            stats['solved_problems'] = result['count'].iloc[0]
+            
+            # المجالات المختلفة
+            result = pd.read_sql("SELECT COUNT(DISTINCT domain) as count FROM problem", self.engine)
+            stats['unique_domains'] = result['count'].iloc[0]
+            
+            logging.info(f"إحصائيات قاعدة البيانات: {stats}")
+            return stats
+            
+        except Exception as e:
+            logging.error(f"خطأ في الحصول على الإحصائيات: {e}")
+            raise
+    
+    def close_connection(self):
+        """
+        إغلاق الاتصال بقاعدة البيانات
+        """
+        if self.engine:
+            self.engine.dispose()
+            logging.info("تم إغلاق الاتصال بقاعدة البيانات")
+
+# مثال على الاستخدام
+if __name__ == "__main__":
+    # إعداد التسجيل
+    logging.basicConfig(level=logging.INFO)
+    
+    # إنشاء اتصال بقاعدة البيانات
+    db = DatabaseConnector()
+    
+    # الحصول على إحصائيات
+    stats = db.get_database_stats()
+    print("إحصائيات قاعدة البيانات:", stats)
+    
+    # استخراج البيانات
+    problems_df = db.extract_problems_data(limit=100)  # أول 100 مشكلة للاختبار
+    print(f"تم استخراج {len(problems_df)} مشكلة")
+    print("أعمدة البيانات:", problems_df.columns.tolist())
+    
+    # إغلاق الاتصال
+    db.close_connection()
+
+
+# src/models/clustering_model.py
+import pandas as pd
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.cluster import KMeans, DBSCAN
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.decomposition import PCA
+from sklearn.metrics import silhouette_score
+import matplotlib.pyplot as plt
+import seaborn as sns
+from typing import Dict, List, Tuple, Optional
+import joblib
+import logging
+from datetime import datetime
+
+class ProblemClusteringModel:
+    """
+    نموذج تجميع المشاكل باستخدام التعلم غير المُشرف عليه
+    """
+    
+    def __init__(self, n_clusters: int = 8, clustering_method: str = 'kmeans'):
+        """
+        تهيئة النموذج
+        
+        Args:
+            n_clusters: عدد المجموعات المطلوبة
+            clustering_method: طريقة التجميع ('kmeans', 'dbscan')
+        """
+        self.n_clusters = n_clusters
+        self.clustering_method = clustering_method
+        self.vectorizer = None
+        self.scaler = None
+        self.clustering_model = None
+        self.label_encoders = {}
+        self.feature_names = []
+        self.cluster_info = {}
+        
+    def prepare_features(self, df: pd.DataFrame) -> np.ndarray:
+        """
+        تحضير الميزات للتدريب
+        
+        Args:
+            df: DataFrame يحتوي على بيانات المشاكل
+            
+        Returns:
+            np.ndarray: مصفوفة الميزات المعالجة
+        """
+        logging.info("بدء تحضير الميزات...")
+        
+        features_list = []
+        
+        # 1. معالجة النصوص
+        text_columns = ['title', 'description_initial', 'problem_tags', 
+                       'stakeholders_involved', 'refined_problem_statement_final']
+        
+        # دمج النصوص
+        combined_text = df[text_columns].fillna('').agg(' '.join, axis=1)
+        
+        # تحويل النصوص إلى vectors
+        if self.vectorizer is None:
+            self.vectorizer = TfidfVectorizer(
+                max_features=500,
+                min_df=2,
+                max_df=0.95,
+                ngram_range=(1, 2),
+                stop_words='english'  # يمكن إضافة العربية
+            )
+            text_features = self.vectorizer.fit_transform(combined_text).toarray()
+        else:
+            text_features = self.vectorizer.transform(combined_text).toarray()
+            
+        features_list.append(text_features)
+        
+        # 2. معالجة الميزات الفئوية
+        categorical_columns = ['domain', 'complexity_level', 'status', 'problem_source', 'sentiment_label']
+        
+        for col in categorical_columns:
+            if col in df.columns:
+                if col not in self.label_encoders:
+                    self.label_encoders[col] = LabelEncoder()
+                    encoded = self.label_encoders[col].fit_transform(df[col].fillna('unknown'))
+                else:
+                    encoded = self.label_encoders[col].transform(df[col].fillna('unknown'))
+                    
+                features_list.append(encoded.reshape(-1, 1))
+        
+        # 3. معالجة الميزات الرقمية
+        numeric_columns = ['sentiment_score']
+        
+        for col in numeric_columns:
+            if col in df.columns:
+                values = df[col].fillna(df[col].median()).values.reshape(-1, 1)
+                features_list.append(values)
+        
+        # 4. معالجة التواريخ
+        date_columns = ['date_identified', 'date_closed']
+        
+        for col in date_columns:
+            if col in df.columns:
+                # تحويل التاريخ إلى عدد الأيام من تاريخ معين
+                df[col] = pd.to_datetime(df[col], errors='coerce')
+                base_date = pd.to_datetime('2020-01-01')
+                days_diff = (df[col] - base_date).dt.days.fillna(0).values.reshape(-1, 1)
+                features_list.append(days_diff)
+        
+        # 5. حساب ميزات إضافية
+        # طول النص
+        text_length = combined_text.str.len().values.reshape(-1, 1)
+        features_list.append(text_length)
+        
+        # عدد أصحاب المصلحة (تقدير بناءً على الفواصل)
+        stakeholder_count = df['stakeholders_involved'].fillna('').str.count(',').values.reshape(-1, 1) + 1
+        features_list.append(stakeholder_count)
+        
+        # دمج جميع الميزات
+        all_features = np.hstack(features_list)
+        
+        # توحيد المقياس
+        if self.scaler is None:
+            self.scaler = StandardScaler()
+            scaled_features = self.scaler.fit_transform(all_features)
+        else:
+            scaled_features = self.scaler.transform(all_features)
+        
+        logging.info(f"تم تحضير {scaled_features.shape[1]} ميزة لـ {scaled_features.shape[0]} مشكلة")
+        
+        return scaled_features
+    
+    def train(self, df: pd.DataFrame) -> Dict:
+        """
+        تدريب نموذج التجميع
+        
+        Args:
+            df: DataFrame يحتوي على بيانات المشاكل
+            
+        Returns:
+            Dict: معلومات التدريب والنتائج
+        """
+        logging.info("بدء تدريب نموذج التجميع...")
+        
+        # تحضير الميزات
+        features = self.prepare_features(df)
+        
+        # تدريب النموذج
+        if self.clustering_method == 'kmeans':
+            self.clustering_model = KMeans(
+                n_clusters=self.n_clusters, 
+                random_state=42,
+                n_init=10
+            )
+        elif self.clustering_method == 'dbscan':
+            self.clustering_model = DBSCAN(
+                eps=0.5,
+                min_samples=5
+            )
+        
+        # التدريب
+        cluster_labels = self.clustering_model.fit_predict(features)
+        
+        # حساب معايير الجودة
+        if len(set(cluster_labels)) > 1:
+            silhouette_avg = silhouette_score(features, cluster_labels)
+        else:
+            silhouette_avg = 0
+        
+        # حفظ معلومات المجموعات
+        df_with_clusters = df.copy()
+        df_with_clusters['cluster'] = cluster_labels
+        
+        self.cluster_info = self._analyze_clusters(df_with_clusters)
+        
+        training_info = {
+            'n_samples': len(df),
+            'n_features': features.shape[1],
+            'n_clusters_found': len(set(cluster_labels)),
+            'silhouette_score': silhouette_avg,
+            'cluster_sizes': pd.Series(cluster_labels).value_counts().to_dict(),
+            'training_date': datetime.now().isoformat()
+        }
+        
+        logging.info(f"اكتمل التدريب - عدد المجموعات: {training_info['n_clusters_found']}")
+        logging.info(f"نتيجة Silhouette: {silhouette_avg:.3f}")
+        
+        return training_info
+    
+    def _analyze_clusters(self, df_with_clusters: pd.DataFrame) -> Dict:
+        """
+        تحليل خصائص كل مجموعة
+        """
+        cluster_analysis = {}
+        
+        for cluster_id in df_with_clusters['cluster'].unique():
+            if cluster_id == -1:  # نقاط الضوضاء في DBSCAN
+                continue
+                
+            cluster_data = df_with_clusters[df_with_clusters['cluster'] == cluster_id]
+            
+            analysis = {
+                'size': len(cluster_data),
+                'percentage': len(cluster_data) / len(df_with_clusters) * 100,
+                'common_domains': cluster_data['domain'].mode().tolist(),
+                'common_complexity': cluster_data['complexity_level'].mode().tolist(),
+                'avg_sentiment': cluster_data['sentiment_score'].mean() if 'sentiment_score' in cluster_data else None,
+                'common_status': cluster_data['status'].mode().tolist(),
+                'sample_titles': cluster_data['title'].head(3).tolist()
+            }
+            
+            cluster_analysis[f'cluster_{cluster_id}'] = analysis
+        
+        return cluster_analysis
+    
+    def predict_cluster(self, problem_data: Dict) -> Tuple[int, Dict]:
+        """
+        التنبؤ بمجموعة مشكلة جديدة
+        
+        Args:
+            problem_data: بيانات المشكلة الجديدة
+            
+        Returns:
+            Tuple[int, Dict]: رقم المجموعة ومعلومات إضافية
+        """
+        # تحويل البيانات إلى DataFrame
+        df_new = pd.DataFrame([problem_data])
+        
+        # تحضير الميزات
+        features = self.prepare_features(df_new)
+        
+        # التنبؤ
+        cluster_id = self.clustering_model.predict(features)[0]
+        
+        # معلومات المجموعة
+        cluster_info = self.cluster_info.get(f'cluster_{cluster_id}', {})
+        
+        prediction_info = {
+            'cluster_id': int(cluster_id),
+            'cluster_info': cluster_info,
+            'confidence': self._calculate_confidence(features, cluster_id)
+        }
+        
+        return cluster_id, prediction_info
+    
+    def _calculate_confidence(self, features: np.ndarray, predicted_cluster: int) -> float:
+        """
+        حساب مستوى الثقة في التنبؤ
+        """
+        if self.clustering_method == 'kmeans':
+            # حساب المسافة إلى مركز المجموعة
+            cluster_center = self.clustering_model.cluster_centers_[predicted_cluster]
+            distance = np.linalg.norm(features[0] - cluster_center)
+            
+            # تحويل المسافة إلى نسبة ثقة (كلما قلت المسافة زادت الثقة)
+            max_distance = np.max([np.linalg.norm(center - cluster_center) 
+                                  for center in self.clustering_model.cluster_centers_])
+            confidence = max(0, 1 - (distance / max_distance))
+            
+            return float(confidence)
+        
+        return 0.5  # ثقة متوسطة للطرق الأخرى
+    
+    def visualize_clusters(self, df: pd.DataFrame, save_path: str = None):
+        """
+        رسم بياني للمجموعات
+        """
+        # تحضير الميزات
+        features = self.prepare_features(df)
+        
+        # تقليل الأبعاد للرسم
+        pca = PCA(n_components=2)
+        features_2d = pca.fit_transform(features)
+        
+        # التنبؤ بالمجموعات
+        cluster_labels = self.clustering_model.predict(features)
+        
+        # الرسم
+        plt.figure(figsize=(12, 8))
+        scatter = plt.scatter(features_2d[:, 0], features_2d[:, 1], 
+                            c=cluster_labels, cmap='tab10', alpha=0.7)
+        plt.colorbar(scatter)
+        plt.title('Problem Clusters Visualization')
+        plt.xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)')
+        plt.ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)')
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        
+        plt.show()
+    
+    def save_model(self, file_path: str):
+        """
+        حفظ النموذج
+        """
+        model_data = {
+            'clustering_model': self.clustering_model,
+            'vectorizer': self.vectorizer,
+            'scaler': self.scaler,
+            'label_encoders': self.label_encoders,
+            'cluster_info': self.cluster_info,
+            'n_clusters': self.n_clusters,
+            'clustering_method': self.clustering_method
+        }
+        
+        joblib.dump(model_data, file_path)
+        logging.info(f"تم حفظ النموذج في: {file_path}")
+    
+    def load_model(self, file_path: str):
+        """
+        تحميل النموذج
+        """
+        model_data = joblib.load(file_path)
+        
+        self.clustering_model = model_data['clustering_model']
+        self.vectorizer = model_data['vectorizer']
+        self.scaler = model_data['scaler']
+        self.label_encoders = model_data['label_encoders']
+        self.cluster_info = model_data['cluster_info']
+        self.n_clusters = model_data['n_clusters']
+        self.clustering_method = model_data['clustering_method']
+        
+        logging.info(f"تم تحميل النموذج من: {file_path}")
+
+# مثال على الاستخدام
+if __name__ == "__main__":
+    # إعداد التسجيل
+    logging.basicConfig(level=logging.INFO)
+    
+    # إنشاء نموذج التجميع
+    clustering_
+
+# src/models/clustering_model.py
+import pandas as pd
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.cluster import KMeans, DBSCAN
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.decomposition import PCA
+from sklearn.metrics import silhouette_score
+import matplotlib.pyplot as plt
+import seaborn as sns
+from typing import Dict, List, Tuple, Optional
+import joblib
+import logging
+from datetime import datetime
+
+class ProblemClusteringModel:
+    """
+    نموذج تجميع المشاكل باستخدام التعلم غير المُشرف عليه
+    """
+    
+    def __init__(self, n_clusters: int = 8, clustering_method: str = 'kmeans'):
+        """
+        تهيئة النموذج
+        
+        Args:
+            n_clusters: عدد المجموعات المطلوبة
+            clustering_method: طريقة التجميع ('kmeans', 'dbscan')
+        """
+        self.n_clusters = n_clusters
+        self.clustering_method = clustering_method
+        self.vectorizer = None
+        self.scaler = None
+        self.clustering_model = None
+        self.label_encoders = {}
+        self.feature_names = []
+        self.cluster_info = {}
+        
+    def prepare_features(self, df: pd.DataFrame) -> np.ndarray:
+        """
+        تحضير الميزات للتدريب
+        
+        Args:
+            df: DataFrame يحتوي على بيانات المشاكل
+            
+        Returns:
+            np.ndarray: مصفوفة الميزات المعالجة
+        """
+        logging.info("بدء تحضير الميزات...")
+        
+        features_list = []
+        
+        # 1. معالجة النصوص
+        text_columns = ['title', 'description_initial', 'problem_tags', 
+                       'stakeholders_involved', 'refined_problem_statement_final']
+        
+        # دمج النصوص
+        combined_text = df[text_columns].fillna('').agg(' '.join, axis=1)
+        
+        # تحويل النصوص إلى vectors
+        if self.vectorizer is None:
+            self.vectorizer = TfidfVectorizer(
+                max_features=500,
+                min_df=2,
+                max_df=0.95,
+                ngram_range=(1, 2),
+                stop_words='english'  # يمكن إضافة العربية
+            )
+            text_features = self.vectorizer.fit_transform(combined_text).toarray()
+        else:
+            text_features = self.vectorizer.transform(combined_text).toarray()
+            
+        features_list.append(text_features)
+        
+        # 2. معالجة الميزات الفئوية
+        categorical_columns = ['domain', 'complexity_level', 'status', 'problem_source', 'sentiment_label']
+        
+        for col in categorical_columns:
+            if col in df.columns:
+                if col not in self.label_encoders:
+                    self.label_encoders[col] = LabelEncoder()
+                    encoded = self.label_encoders[col].fit_transform(df[col].fillna('unknown'))
+                else:
+                    encoded = self.label_encoders[col].transform(df[col].fillna('unknown'))
+                    
+                features_list.append(encoded.reshape(-1, 1))
+        
+        # 3. معالجة الميزات الرقمية
+        numeric_columns = ['sentiment_score']
+        
+        for col in numeric_columns:
+            if col in df.columns:
+                values = df[col].fillna(df[col].median()).values.reshape(-1, 1)
+                features_list.append(values)
+        
+        # 4. معالجة التواريخ
+        date_columns = ['date_identified', 'date_closed']
+        
+        for col in date_columns:
+            if col in df.columns:
+                # تحويل التاريخ إلى عدد الأيام من تاريخ معين
+                df[col] = pd.to_datetime(df[col], errors='coerce')
+                base_date = pd.to_datetime('2020-01-01')
+                days_diff = (df[col] - base_date).dt.days.fillna(0).values.reshape(-1, 1)
+                features_list.append(days_diff)
+        
+        # 5. حساب ميزات إضافية
+        # طول النص
+        text_length = combined_text.str.len().values.reshape(-1, 1)
+        features_list.append(text_length)
+        
+        # عدد أصحاب المصلحة (تقدير بناءً على الفواصل)
+        stakeholder_count = df['stakeholders_involved'].fillna('').str.count(',').values.reshape(-1, 1) + 1
+        features_list.append(stakeholder_count)
+        
+        # دمج جميع الميزات
+        all_features = np.hstack(features_list)
+        
+        # توحيد المقياس
+        if self.scaler is None:
+            self.scaler = StandardScaler()
+            scaled_features = self.scaler.fit_transform(all_features)
+        else:
+            scaled_features = self.scaler.transform(all_features)
+        
+        logging.info(f"تم تحضير {scaled_features.shape[1]} ميزة لـ {scaled_features.shape[0]} مشكلة")
+        
+        return scaled_features
+    
+    def train(self, df: pd.DataFrame) -> Dict:
+        """
+        تدريب نموذج التجميع
+        
+        Args:
+            df: DataFrame يحتوي على بيانات المشاكل
+            
+        Returns:
+            Dict: معلومات التدريب والنتائج
+        """
+        logging.info("بدء تدريب نموذج التجميع...")
+        
+        # تحضير الميزات
+        features = self.prepare_features(df)
+        
+        # تدريب النموذج
+        if self.clustering_method == 'kmeans':
+            self.clustering_model = KMeans(
+                n_clusters=self.n_clusters, 
+                random_state=42,
+                n_init=10
+            )
+        elif self.clustering_method == 'dbscan':
+            self.clustering_model = DBSCAN(
+                eps=0.5,
+                min_samples=5
+            )
+        
+        # التدريب
+        cluster_labels = self.clustering_model.fit_predict(features)
+        
+        # حساب معايير الجودة
+        if len(set(cluster_labels)) > 1:
+            silhouette_avg = silhouette_score(features, cluster_labels)
+        else:
+            silhouette_avg = 0
+        
+        # حفظ معلومات المجموعات
+        df_with_clusters = df.copy()
+        df_with_clusters['cluster'] = cluster_labels
+        
+        self.cluster_info = self._analyze_clusters(df_with_clusters)
+        
+        training_info = {
+            'n_samples': len(df),
+            'n_features': features.shape[1],
+            'n_clusters_found': len(set(cluster_labels)),
+            'silhouette_score': silhouette_avg,
+            'cluster_sizes': pd.Series(cluster_labels).value_counts().to_dict(),
+            'training_date': datetime.now().isoformat()
+        }
+        
+        logging.info(f"اكتمل التدريب - عدد المجموعات: {training_info['n_clusters_found']}")
+        logging.info(f"نتيجة Silhouette: {silhouette_avg:.3f}")
+        
+        return training_info
+    
+    def _analyze_clusters(self, df_with_clusters: pd.DataFrame) -> Dict:
+        """
+        تحليل خصائص كل مجموعة
+        """
+        cluster_analysis = {}
+        
+        for cluster_id in df_with_clusters['cluster'].unique():
+            if cluster_id == -1:  # نقاط الضوضاء في DBSCAN
+                continue
+                
+            cluster_data = df_with_clusters[df_with_clusters['cluster'] == cluster_id]
+            
+            analysis = {
+                'size': len(cluster_data),
+                'percentage': len(cluster_data) / len(df_with_clusters) * 100,
+                'common_domains': cluster_data['domain'].mode().tolist(),
+                'common_complexity': cluster_data['complexity_level'].mode().tolist(),
+                'avg_sentiment': cluster_data['sentiment_score'].mean() if 'sentiment_score' in cluster_data else None,
+                'common_status': cluster_data['status'].mode().tolist(),
+                'sample_titles': cluster_data['title'].head(3).tolist()
+            }
+            
+            cluster_analysis[f'cluster_{cluster_id}'] = analysis
+        
+        return cluster_analysis
+    
+    def predict_cluster(self, problem_data: Dict) -> Tuple[int, Dict]:
+        """
+        التنبؤ بمجموعة مشكلة جديدة
+        
+        Args:
+            problem_data: بيانات المشكلة الجديدة
+            
+        Returns:
+            Tuple[int, Dict]: رقم المجموعة ومعلومات إضافية
+        """
+        # تحويل البيانات إلى DataFrame
+        df_new = pd.DataFrame([problem_data])
+        
+        # تحضير الميزات
+        features = self.prepare_features(df_new)
+        
+        # التنبؤ
+        cluster_id = self.clustering_model.predict(features)[0]
+        
+        # معلومات المجموعة
+        cluster_info = self.cluster_info.get(f'cluster_{cluster_id}', {})
+        
+        prediction_info = {
+            'cluster_id': int(cluster_id),
+            'cluster_info': cluster_info,
+            'confidence': self._calculate_confidence(features, cluster_id)
+        }
+        
+        return cluster_id, prediction_info
+    
+    def _calculate_confidence(self, features: np.ndarray, predicted_cluster: int) -> float:
+        """
+        حساب مستوى الثقة في التنبؤ
+        """
+        if self.clustering_method == 'kmeans':
+            # حساب المسافة إلى مركز المجموعة
+            cluster_center = self.clustering_model.cluster_centers_[predicted_cluster]
+            distance = np.linalg.norm(features[0] - cluster_center)
+            
+            # تحويل المسافة إلى نسبة ثقة (كلما قلت المسافة زادت الثقة)
+            max_distance = np.max([np.linalg.norm(center - cluster_center) 
+                                  for center in self.clustering_model.cluster_centers_])
+            confidence = max(0, 1 - (distance / max_distance))
+            
+            return float(confidence)
+        
+        return 0.5  # ثقة متوسطة للطرق الأخرى
+    
+    def visualize_clusters(self, df: pd.DataFrame, save_path: str = None):
+        """
+        رسم بياني للمجموعات
+        """
+        # تحضير الميزات
+        features = self.prepare_features(df)
+        
+        # تقليل الأبعاد للرسم
+        pca = PCA(n_components=2)
+        features_2d = pca.fit_transform(features)
+        
+        # التنبؤ بالمجموعات
+        cluster_labels = self.clustering_model.predict(features)
+        
+        # الرسم
+        plt.figure(figsize=(12, 8))
+        scatter = plt.scatter(features_2d[:, 0], features_2d[:, 1], 
+                            c=cluster_labels, cmap='tab10', alpha=0.7)
+        plt.colorbar(scatter)
+        plt.title('Problem Clusters Visualization')
+        plt.xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)')
+        plt.ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)')
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        
+        plt.show()
+    
+    def save_model(self, file_path: str):
+        """
+        حفظ النموذج
+        """
+        model_data = {
+            'clustering_model': self.clustering_model,
+            'vectorizer': self.vectorizer,
+            'scaler': self.scaler,
+            'label_encoders': self.label_encoders,
+            'cluster_info': self.cluster_info,
+            'n_clusters': self.n_clusters,
+            'clustering_method': self.clustering_method
+        }
+        
+        joblib.dump(model_data, file_path)
+        logging.info(f"تم حفظ النموذج في: {file_path}")
+    
+    def load_model(self, file_path: str):
+        """
+        تحميل النموذج
+        """
+        model_data = joblib.load(file_path)
+        
+        self.clustering_model = model_data['clustering_model']
+        self.vectorizer = model_data['vectorizer']
+        self.scaler = model_data['scaler']
+        self.label_encoders = model_data['label_encoders']
+        self.cluster_info = model_data['cluster_info']
+        self.n_clusters = model_data['n_clusters']
+        self.clustering_method = model_data['clustering_method']
+        
+        logging.info(f"تم تحميل النموذج من: {file_path}")
+
+# مثال على الاستخدام
+if __name__ == "__main__":
+    # إعداد التسجيل
+    logging.basicConfig(level=logging.INFO)
+    
+    # إنشاء نموذج التجميع
+    clustering_model = ProblemClusteringModel(n_clusters=8, clustering_method='kmeans')
+    
+    # تحميل البيانات (يجب استبدال هذا ببياناتك الفعلية)
+    # من database_connector
+    from src.data_processing.database_connector import DatabaseConnector
+    
+    db = DatabaseConnector()
+    problems_df = db.extract_problems_data()
+    
+    # تدريب النموذج
+    training_results = clustering_model.train(problems_df)
+    print("نتائج التدريب:", training_results)
+    
+    # حفظ النموذج
+    clustering_model.save_model('data/models/clustering_model.pkl')
+    
+    # مثال على التنبؤ بمشكلة جديدة
+    new_problem = {
+        'title': 'مشكلة في الشبكة',
+        'description_initial': 'انقطاع متكرر في الاتصال بالإنترنت',
+        'domain': 'IT',
+        'complexity_level': 'Medium',
+        'sentiment_score': -0.5,
+        'sentiment_label': 'Negative',
+        'stakeholders_involved': 'IT Team, Management',
+        'problem_tags': 'network, connectivity, infrastructure'
+    }
+    
+    cluster_id, prediction_info = clustering_model.predict_cluster(new_problem)
+    print(f"المشكلة الجديدة تنتمي للمجموعة: {cluster_id}")
+    print(f"معلومات التنبؤ: {prediction_info}")
+    
+    # رسم المجموعات
+    clustering_model.visualize_clusters(problems_df, save_path='data/cluster_visualization.png')
+    
+    db.close_connection()
+
+# src/analysis/recommendation_engine.py
+import pandas as pd
+import numpy as np
+from typing import Dict, List, Tuple, Optional
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
+import logging
+from datetime import datetime, timedelta
+import statistics
+
+class ManagementRecommendationEngine:
+    """
+    محرك التوصيات الذكي للإدارة - يقدم نصائح مبنية على تحليل البيانات
+    """
+    
+    def __init__(self, clustering_model=None):
+        """
+        تهيئة محرك التوصيات
+        
+        Args:
+            clustering_model: نموذج التجميع المدرب
+        """
+        self.clustering_model = clustering_model
+        self.problems_data = None
+        self.solutions_data = None
+        self.success_patterns = {}
+        
+    def load_historical_data(self, problems_df: pd.DataFrame, kpi_df: pd.DataFrame = None):
+        """
+        تحميل البيانات التاريخية للتحليل
+        
+        Args:
+            problems_df: بيانات المشاكل
+            kpi_df: بيانات مؤشرات الأداء
+        """
+        self.problems_data = problems_df.copy()
+        self.kpi_data = kpi_df
+        
+        # تحليل أنماط النجاح
+        self._analyze_success_patterns()
+        
+        logging.info(f"تم تحميل {len(problems_df)} مشكلة للتحليل")
+    
+    def _analyze_success_patterns(self):
+        """
+        تحليل أنماط النجاح في حل المشاكل
+        """
+        if self.problems_data is None:
+            return
+        
+        # تحليل معدلات النجاح حسب المجال
+        domain_success = {}
+        for domain in self.problems_data['domain'].unique():
+            if pd.isna(domain):
+                continue
+                
+            domain_problems = self.problems_data[self.problems_data['domain'] == domain]
+            solved_problems = domain_problems[domain_problems['status'] == 'closed']
+            
+            if len(domain_problems) > 0:
+                success_rate = len(solved_problems) / len(domain_problems)
+                avg_time_to_solve = self._calculate_avg_resolution_time(solved_problems)
+                avg_cost = self._estimate_avg_cost(solved_problems)
+                
+                domain_success[domain] = {
+                    'success_rate': success_rate,
+                    'avg_resolution_days': avg_time_to_solve,
+                    'avg_cost_estimate': avg_cost,
+                    'total_problems': len(domain_problems),
+                    'solved_problems': len(solved_problems)
+                }
+        
+        # تحليل معدلات النجاح حسب مستوى التعقيد
+        complexity_success = {}
+        for complexity in self.problems_data['complexity_level'].unique():
+            if pd.isna(complexity):
+                continue
+                
+            complexity_problems = self.problems_data[self.problems_data['complexity_level'] == complexity]
+            solved_problems = complexity_problems[complexity_problems['status'] == 'closed']
+            
+            if len(complexity_problems) > 0:
+                success_rate = len(solved_problems) / len(complexity_problems)
+                avg_time_to_solve = self._calculate_avg_resolution_time(solved_problems)
+                
+                complexity_success[complexity] = {
+                    'success_rate': success_rate,
+                    'avg_resolution_days': avg_time_to_solve,
+                    'total_problems': len(complexity_problems),
+                    'solved_problems': len(solved_problems)
+                }
+        
+        self.success_patterns = {
+            'by_domain': domain_success,
+            'by_complexity': complexity_success,
+            'overall_stats': self._calculate_overall_stats()
+        }
+    
+    def _calculate_avg_resolution_time(self, solved_problems: pd.DataFrame) -> float:
+        """
+        حساب متوسط وقت الحل
+        """
+        if len(solved_problems) == 0:
+            return 0
+        
+        resolution_times = []
+        for _, problem in solved_problems.iterrows():
+            if pd.notna(problem['date_identified']) and pd.notna(problem['date_closed']):
+                start_date = pd.to_datetime(problem['date_identified'])
+                end_date = pd.to_datetime(problem['date_closed'])
+                days_diff = (end_date - start_date).days
+                if days_diff > 0:
+                    resolution_times.append(days_diff)
+        
+        return statistics.mean(resolution_times) if resolution_times else 0
+    
+    def _estimate_avg_cost(self, solved_problems: pd.DataFrame) -> str:
+        """
+        تقدير متوسط التكلفة
+        """
+        # هذه دالة مبسطة - يمكن تطويرها بناءً على بيانات التكلفة الفعلية
+        costs = []
+        for _, problem in solved_problems.iterrows():
+            if pd.notna(problem['estimated_cost']):
+                # محاولة استخراج الرقم من النص
+                cost_str = str(problem['estimated_cost']).lower()
+                if 'low' in cost_str:
+                    costs.append(1000)
+                elif 'medium' in cost_str:
+                    costs.append(5000)
+                elif 'high' in cost_str:
+                    costs.append(15000)
+        
+        if costs:
+            avg_cost = statistics.mean(costs)
+            if avg_cost < 2000:
+                return "Low ($1K-$2K)"
+            elif avg_cost < 8000:
+                return "Medium ($2K-$8K)"
+            else:
+                return "High ($8K+)"
+        
+        return "Unknown"
+    
+    def _calculate_overall_stats(self) -> Dict:
+        """
+        حساب الإحصائيات العامة
+        """
+        if self.problems_data is None:
+            return {}
+        
+        total_problems = len(self.problems_data)
+        solved_problems = len(self.problems_data[self.problems_data['status'] == 'closed'])
+        
+        return {
+            'total_problems': total_problems,
+            'solved_problems': solved_problems,
+            'overall_success_rate': solved_problems / total_problems if total_problems > 0 else 0,
+            'avg_sentiment': self.problems_data['sentiment_score'].mean(),
+            'most_common_domain': self.problems_data['domain'].mode().iloc[0] if len(self.problems_data['domain'].mode()) > 0 else 'Unknown'
+        }
+    
+    def analyze_new_problem(self, problem_data: Dict) -> Dict:
+        """
+        تحليل مشكلة جديدة وتقديم التوصيات
+        
+        Args:
+            problem_data: بيانات المشكلة الجديدة
+            
+        Returns:
+            Dict: التحليل والتوصيات
+        """
+        recommendations = {
+            'problem_analysis': {},
+            'similar_problems': [],
+            'recommended_solutions': [],
+            'resource_estimation': {},
+            'risk_assessment': {},
+            'success_probability': 0.0,
+            'management_recommendations': []
+        }
+        
+        # 1. تحليل المشكلة
+        recommendations['problem_analysis'] = self._analyze_problem_characteristics(problem_data)
+        
+        # 2. العثور على مشاكل مشابهة
+        recommendations['similar_problems'] = self._find_similar_problems(problem_data)
+        
+        # 3. توصية الحلول
+        recommendations['recommended_solutions'] = self._recommend_solutions(problem_data)
+        
+        # 4. تقدير الموارد
+        recommendations['resource_estimation'] = self._estimate_resources(problem_data)
+        
+        # 5. تقييم المخاطر
+        recommendations['risk_assessment'] = self._assess_risks(problem_data)
+        
+        # 6. حساب احتمالية النجاح
+        recommendations['success_probability'] = self._calculate_success_probability(problem_data)
+        
+        # 7. توصيات للإدارة
+        recommendations['management_recommendations'] = self._generate_management_recommendations(
+            problem_data, recommendations
+        )
+        
+        return recommendations
+    
+    def _analyze_problem_characteristics(self, problem_data: Dict) -> Dict:
+        """
+        تحليل خصائص المشكلة
+        """
+        analysis = {
+            'complexity_analysis': 'Unknown',
+            'domain_statistics': {},
+            'sentiment_analysis': 'Neutral',
+            'urgency_level': 'Medium'
+        }
+        
+        # تحليل المجال
+        domain = problem_data.get('domain', 'Unknown')
+        if domain in self.success_patterns['by_domain']:
+            analysis['domain_statistics'] = self.success_patterns['by_domain'][domain]
+        
+        # تحليل المشاعر
+        sentiment_score = problem_data.get('sentiment_score', 0)
+        if sentiment_score < -0.3:
+            analysis['sentiment_analysis'] = 'Negative - يتطلب اهتمام عاجل'
+        elif sentiment_score > 0.3:
+            analysis['sentiment_analysis'] = 'Positive - مشكلة قابلة للحل'
+        else:
+            analysis['sentiment_analysis'] = 'Neutral - تحتاج تقييم أعمق'
+        
+        # تحليل مستوى الاستعجال
+        if 'urgent' in str(problem_data.get('title', '')).lower() or \
+           'critical' in str(problem_data.get('description_initial', '')).lower():
+            analysis['urgency_level'] = 'High'
+        elif sentiment_score < -0.5:
+            analysis['urgency_level'] = 'High'
+        
+        return analysis
+    
+    def _find_similar_problems(self, problem_data: Dict, top_k: int = 5) -> List[Dict]:
+        """
+        العثور على مشاكل مشابهة
+        """
+        if self.problems_data is None or len(self.problems_data) == 0:
+            return []
+        
+        # إنشاء نص مركب للمقارنة
+        new_problem_text = f"{problem_data.get('title', '')} {problem_data.get('description_initial', '')} {problem_data.get('problem_tags', '')}"
+        
+        # إنشاء نصوص للمشاكل الموجودة
+        existing_problems_text = []
+        for _, row in self.problems_data.iterrows():
+            text = f"{row.get('title', '')} {row.get('description_initial', '')} {row.get('problem_tags', '')}"
+            existing_problems_text.append(text)
+        
+        # حساب التشابه
+        all_texts = [new_problem_text] + existing_problems_text
+        vectorizer = TfidfVectorizer(max_features=100, stop_words='english')
+        
+        try:
+            tfidf_matrix = vectorizer.fit_transform(all_texts)
+            similarities = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:]).flatten()
+            
+            # الحصول على أعلى مشاكل متشابهة
+            top_indices = similarities.argsort()[-top_k:][::-1]
+            
+            similar_problems = []
+            for idx in top_indices:
+                if similarities[idx] > 0.1:  # حد أدنى للتشابه
+                    problem = self.problems_data.iloc[idx]
+                    similar_problems.append({
+                        'problem_id': problem.get('problem_id', idx),
+                        'title': problem.get('title', 'Unknown'),
+                        'domain': problem.get('domain', 'Unknown'),
+                        'status': problem.get('status', 'Unknown'),
+                        'similarity_score': float(similarities[idx]),
+                        'solution_description': problem.get('solution_description', 'N/A'),
+                        'resolution_time': self._calculate_resolution_time(problem)
+                    })
+            
+            return similar_problems
+            
+        except Exception as e:
+            logging.error(f"خطأ في العثور على مشاكل مشابهة: {e}")
+            return []
+    
+    def _calculate_resolution_time(self, problem: pd.Series) -> int:
+        """
+        حساب وقت الحل لمشكلة معينة
+        """
+        try:
+            if pd.notna(problem.get('date_identified')) and pd.notna(problem.get('date_closed')):
+                start_date = pd.to_datetime(problem['date_identified'])
+                end_date = pd.to_datetime(problem['date_closed'])
+                return (end_date - start_date).days
+        except:
+            pass
+        return 0
+    
+    def _recommend_solutions(self, problem_data: Dict) -> List[Dict]:
+        """
+        توصية الحلول بناءً على المشاكل المشابهة
+        """
+        similar_problems = self._find_similar_problems(problem_data)
+        
+        solution_recommendations = []
+        solution_counts = {}
+        
+        # تجميع الحلول المشتركة
+        for similar_problem in similar_problems:
+            solution = similar_problem.get('solution_description', '')
+            if solution and solution != 'N/A':
+                if solution in solution_counts:
+                    solution_counts[solution] += 1
+                else:
+                    solution_counts[solution] = 1
+        
+        # ترتيب الحلول حسب الشيوع
+        sorted_solutions = sorted(solution_counts.items(), key=lambda x: x[1], reverse=True)
+        
+        for solution, count in sorted_solutions[:3]:  # أفضل 3 حلول
+            solution_recommendations.append({
+                'solution_description': solution,
+                'frequency': count,
+                'confidence': count / len(similar_problems) if similar_problems else 0,
+                'based_on_problems': len(similar_problems)
+            })
+        
+        return solution_recommendations
+    
+    def _estimate_resources(self, problem_data: Dict) -> Dict:
+        """
+        تقدير الموارد المطلوبة
+        """
+        domain = problem_data.get('domain', 'Unknown')
+        complexity = problem_data.get('complexity_level', 'Medium')
+        
+        estimation = {
+            'estimated_time_days': 30,  # افتراضي
+            'estimated_cost': 'Medium',
+            'required_team_size': 3,
+            'estimated_confidence': 0.5
+        }
+        
+        # تقدير بناءً على البيانات التاريخية
+        if domain in self.success_patterns['by_domain']:
+            domain_stats = self.success_patterns['by_domain'][domain]
+            estimation['estimated_time_days'] = int(domain_stats['avg_resolution_days'])
+            estimation['estimated_cost'] = domain_stats['avg_cost_estimate']
+            estimation['estimated_confidence'] = 0.8
+        
+        if complexity in self.success_patterns['by_complexity']:
+            complexity_stats = self.success_patterns['by_complexity'][complexity]
+            if estimation['estimated_time_days'] == 30:  # إذا لم يتم التحديث من المجال
+                estimation['estimated_time_days'] = int(complexity_stats['avg_resolution_days'])
+        
+        # تعديل حجم الفريق بناءً على التعقيد
+        if complexity == 'High':
+            estimation['required_team_size'] = 5
+        elif complexity == 'Low':
+            estimation['required_team_size'] = 2
+        
+        return estimation
+    
+    def _assess_risks(self, problem_data: Dict) -> Dict:
+        """
+        تقييم المخاطر
+        """
+        risks = {
+            'overall_risk_level': 'Medium',
+            'identified_risks': [],
+            'mitigation_suggestions': []
+        }
+        
+        # تقييم المخاطر بناءً على البيانات
+        domain = problem_data.get('domain', 'Unknown')
+        complexity = problem_data.get('complexity_level', 'Medium')
+        sentiment = problem_data.get('sentiment_score', 0)
+        
+        # مخاطر بناءً على المجال
+        if domain in self.success_patterns['by_domain']:
+            success_rate = self.success_patterns['by_domain'][domain]['success_rate']
+            if success_rate < 0.6:
+                risks['identified_risks'].append(f"المجال {domain} له معدل نجاح منخفض ({success_rate:.1%})")
+                risks['overall_risk_level'] = 'High'
+        
+        # مخاطر بناءً على التعقيد
+        if complexity == 'High':
+            risks['identified_risks'].append("مستوى التعقيد العالي يزيد من مخاطر التأخير")
+            risks['overall_risk_level'] = 'High'
+        
+        # مخاطر بناءً على المشاعر
+        if sentiment < -0.5:
+            risks['identified_risks'].append("المشاعر السلبية القوية قد تؤثر على التعاون")
+            risks['mitigation_suggestions'].append("ينصح بتحسين التواصل مع أصحاب المصلحة")
+        
+        # اقتراحات عامة لتقليل المخاطر
+        risks['mitigation_suggestions'].extend([
+            "وضع خطة طوارئ واضحة",
+            "مراقبة التقدم بانتظام",
+            "ضمان توفر الموارد اللازمة"
+        ])
+        
+        return risks
+    
+    def _calculate_success_probability(self, problem_data: Dict) -> float:
+        """
+        حساب احتمالية النجاح
+        """
+        probability = 0.7  # احتمالية افتراضية
+        
+        domain = problem_data.get('domain', 'Unknown')
+        complexity = problem_data.get('complexity_level', 'Medium')
+        
+        # تعديل بناءً على إحصائيات المجال
+        if domain in self.success_patterns['by_domain']:
+            domain_success_rate = self.success_patterns['by_domain'][domain]['success_rate']
+            probability = (probability + domain_success_rate) / 2
+        
+        # تعديل بناءً على التعقيد
+        if complexity == 'Low':
+            probability += 0.1
+        elif complexity == 'High':
+            probability -= 0.2
+        
+        # تعديل بناءً على المشاعر
+        sentiment = problem_data.get('sentiment_score', 0)
+        if sentiment < -0.5:
+            probability -= 0.1
+        elif sentiment > 0.3:
+            probability += 0.1
+        
+        return max(0.1, min(0.95, probability))
+    
+    def _generate_management_recommendations(self, problem_data: Dict, analysis: Dict) -> List[str]:
+        """
+        إنتاج توصيات محددة للإدارة
+        """
+        recommendations = []
+        
+        success_prob = analysis['success_probability']
+        risk_level = analysis['risk_assessment']['overall_risk_level']
+        estimated_time = analysis['resource_estimation']['estimated_time_days']
+        
+        # توصيات بناءً على احتمالية النجاح
+        if success_prob > 0.8:
+            recommendations.append("✅ احتمالية نجاح عالية - يُنصح بالمتابعة الطبيعية")
+        elif success_prob < 0.5:
+            recommendations.append("⚠️ احتمالية نجاح منخفضة - يتطلب إشراف إداري مكثف")
+            recommendations.append("💡 النظر في تقسيم المشكلة إلى أجزاء أصغر")
+        
+        # توصيات بناءً على المخاطر
+        if risk_level == 'High':
+            recommendations.append("🚨 مستوى مخاطر عالي - تخصيص موارد إضافية")
+            recommendations.append("📊 مراجعة أسبوعية للتقدم")
+        
+        # توصيات بناءً على الوقت المتوقع
+        if estimated_time > 60:
+            recommendations.append("⏰ مشروع طويل المدى - وضع معالم زمنية واضحة")
+            recommendations.append("👥 النظر في تشكيل فريق متخصص")
+        elif estimated_time < 7:
+            recommendations.append("⚡ حل سريع متوقع - أولوية عالية للتنفيذ")
+        
+        # توصيات بناءً على المشاكل المشابهة
+        similar_problems = analysis['similar_problems']
+        if len(similar_problems) > 0:
+            avg_similarity = sum(p['similarity_score'] for p in similar_problems) / len(similar_problems)
+            if avg_similarity > 0.7:
+                recommendations.append("🔄 الاستفادة من الحلول المجربة للمشاكل المشابهة")
+        else:
+            recommendations.append("🆕 مشكلة جديدة - النظر في استشارة خبراء خارجيين")
+        
+        # توصيات عامة
+        recommendations.append("📝 توثيق جميع الخطوات للاستفادة مستقبلاً")
+        recommendations.append("🎯 تحديد مؤشرات أداء واضحة لقياس النجاح")
+        
+        return recommendations
+
+# مثال على الاستخدام
+if __name__ == "__main__":
+    # إعداد التسجيل
+    logging.basicConfig(level=logging.INFO)
+    
+    # إنشاء محرك التوصيات
+    recommendation_engine = ManagementRecommendationEngine()
+    
+    # تحميل البيانات التاريخية (مثال)
+    # يجب استبدال هذا ببياناتك الفعلية
+    sample_data = pd.DataFrame({
+        'problem_id': range(1, 101),
+        'title': ['Problem ' + str(i) for i in range(1, 101)],
+        'domain': ['IT', 'HR', 'Finance'] * 34,
+        'status': ['closed', 'open'] * 50,
+        'complexity_level': ['Low', 'Medium', 'High'] * 34,
+        'sentiment_score': np.random.uniform(-1, 1, 100)
+    })
+    
+    recommendation_engine.load_historical_data(sample_data)
+    
+    # تحليل مشكلة جديدة
+    new_problem = {
+        'title': 'Server Performance Issue',
+        'description_initial': 'Database server experiencing slow response times',
+        'domain': 'IT',
+        'complexity_level': 'High',
+        'sentiment_score': -0.6,
+        'stakeholders_involved': 'IT Team, Management, End Users'
+    }
+    
+    analysis_results = recommendation_engine.analyze_new_problem(new_problem)
+    
+    print("=== تحليل المشكلة الجديدة ===")
+    print(f"احتمالية النجاح: {analysis_results['success_probability']:.1%}")
+    print(f"مستوى المخاطر: {analysis_results['risk_assessment']['overall_risk_level']}")
+    print(f"الوقت المتوقع: {analysis_results['resource_estimation']['estimated_time_days']} يوم")
+    
+    print("\n=== توصيات الإدارة ===")
+    for i, recommendation in enumerate(analysis_results['management_recommendations'], 1):
+        print(f"{i}. {recommendation}")
+
+
+
+# frontend/dashboard.py
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import sys
+import os
+
+# إضافة مسار المشروع
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from src.data_processing.database_connector import DatabaseConnector
+from src.models.clustering_model import ProblemClusteringModel
+from src.analysis.recommendation_engine import ManagementRecommendationEngine
+import logging
+
+# تكوين الصفحة
+st.set_page_config(
+    page_title="AI Problem Management Dashboard",
+    page_icon="🤖",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# إخفاء تحذيرات streamlit
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
+# CSS مخصص
+st.markdown("""
+<style>
+.main-header {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid #667eea;
+}
+
+.recommendation-card {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+    margin: 0.5rem 0;
+}
+
+.risk-high { border-left-color: #dc3545 !important; }
+.risk-medium { border-left-color: #ffc107 !important; }
+.risk-low { border-left-color: #28a745 !important; }
+</style>
+""", unsafe_allow_html=True)
+
+# Header
+st.markdown("""
+<div class="main-header">
+    <h1>🤖 نظام الذكاء الاصطناعي لإدارة المشاكل</h1>
+    <p>تحليل ذكي وتوصيات مبنية على البيانات للإدارة</p>
+</div>
+""", unsafe_allow_html=True)
+
+# إعداد الجلسة
+if 'data_loaded' not in st.session_state:
+    st.session_state.data_loaded = False
+    st.session_state.clustering_model = None
+    st.session_state.recommendation_engine = None
+    st.session_state.problems_data = None
+
+# Sidebar
+st.sidebar.title("⚙️
+
+
+""""""""""""""""""""""""""""
+after you see the tree and principal help in complitiona any file defect as a single file or as un generated file
+
+
+# src/utils/text_processing.py
+import re
+import nltk
+import string
+from nltk.corpus import stopwords
+from nltk.stem.isri import ISRIStemmer # مثال على مجذر عربي
+# قد تحتاج إلى تحميل موارد nltk إذا لم تكن موجودة
+try:
+    stopwords.words('arabic')
+    stopwords.words('english')
+except LookupError:
+    nltk.download('stopwords')
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
+
+# قائمة بالكلمات الشائعة العربية والإنجليزية
+ARABIC_STOPWORDS = set(stopwords.words('arabic'))
+ENGLISH_STOPWORDS = set(stopwords.words('english'))
+ALL_STOPWORDS = ARABIC_STOPWORDS.union(ENGLISH_STOPWORDS)
+
+# يمكنك إضافة كلمات شائعة مخصصة إذا لاحظت كلمات معينة تتكرر بكثرة وليست مفيدة
+CUSTOM_STOPWORDS = {"مثل", "ايضا", "كان", "يكون", "أو", "و", "في", "من", "الى", "علي", "حتي", "الخ", "التي", "الذي"}
+ALL_STOPWORDS.update(CUSTOM_STOPWORDS)
+
+
+def normalize_arabic_text(text: str) -> str:
+    """
+    تطبيع النص العربي (إزالة التشكيل، توحيد بعض الحروف).
+    """
+    if not isinstance(text, str):
+        return ""
+    text = re.sub("[إأآا]", "ا", text)
+    text = re.sub("ى", "ي", text)
+    text = re.sub("ؤ", "و", text)
+    text = re.sub("ئ", "ي", "ء" if text.endswith("ء") else "ي", text) # تعديل بسيط للهمزة على الياء
+    text = re.sub("ة", "ه", text)
+    text = re.sub("گ", "ك", text)
+    # إزالة التشكيل
+    text = re.sub(r'[\u064B-\u0652]', '', text)
+    return text
+
+def remove_punctuation_and_digits(text: str) -> str:
+    """
+    إزالة علامات الترقيم والأرقام.
+    """
+    if not isinstance(text, str):
+        return ""
+    # إزالة علامات الترقيم العربية والإنجليزية والأرقام
+    # string.punctuation يحتوي على علامات الترقيم الإنجليزية
+    # نضيف علامات الترقيم العربية الشائعة
+    arabic_punctuation = """`÷×؛<>_()*&^%][ـ،/:"؟.,'{}~¦+|!”…“–ـ"""
+    all_punctuation = string.punctuation + arabic_punctuation
+    translator = str.maketrans('', '', all_punctuation + string.digits)
+    return text.translate(translator)
+
+def remove_stopwords(text: str, custom_stopwords_list: set = None) -> str:
+    """
+    إزالة الكلمات الشائعة من النص.
+    """
+    if not isinstance(text, str):
+        return ""
+
+    stopwords_to_use = ALL_STOPWORDS
+    if custom_stopwords_list:
+        stopwords_to_use = stopwords_to_use.union(custom_stopwords_list)
+
+    words = nltk.word_tokenize(text) # استخدام nltk.word_tokenize للتقسيم
+    filtered_words = [word for word in words if word.lower() not in stopwords_to_use and len(word) > 1]
+    return " ".join(filtered_words)
+
+def stem_text_arabic(text: str) -> str:
+    """
+    تطبيق التجذير على النص العربي باستخدام ISRIStemmer.
+    """
+    if not isinstance(text, str):
+        return ""
+    stemmer = ISRIStemmer()
+    words = nltk.word_tokenize(text)
+    stemmed_words = [stemmer.stem(word) for word in words]
+    return " ".join(stemmed_words)
+
+def preprocess_text_pipeline(text: str, use_stemming: bool = False) -> str:
+    """
+    خط أنابيب كامل لمعالجة النص: تطبيع، إزالة ترقيم وأرقام، إزالة كلمات شائعة، تجذير (اختياري).
+    """
+    if not isinstance(text, str) or pd.isna(text): # التحقق من pd.isna مهم
+        return ""
+
+    # 1. تحويل إلى أحرف صغيرة (مهم للإنجليزية ولتوحيد بعض الكلمات العربية إذا لم يتم تطبيعها بشكل كامل)
+    text = text.lower()
+    # 2. تطبيع النص العربي
+    text = normalize_arabic_text(text)
+    # 3. إزالة علامات الترقيم والأرقام
+    text = remove_punctuation_and_digits(text)
+    # 4. إزالة الروابط (URLs)
+    text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE)
+    # 5. إزالة الإشارات (@username) والهاشتاغ (#topic) (إذا كانت موجودة)
+    text = re.sub(r'\@\w+|\#\w+', '', text)
+    # 6. إزالة المسافات البيضاء الزائدة
+    text = " ".join(text.split())
+    # 7. إزالة الكلمات الشائعة
+    text = remove_stopwords(text)
+    # 8. التجذير (اختياري)
+    if use_stemming:
+        text = stem_text_arabic(text) # مثال للتجذير العربي، يمكن إضافة الإنجليزي
+
+    return text.strip()
+
+
+# مثال للاختبار
+if __name__ == '__main__':
+    import pandas as pd # إضافة pandas هنا للاختبار
+    sample_arabic_text = "السلامُ عليكمْ ورحمةُ اللهِ وبركاته. هذا مثالٌ على نصٍ عربيٍّ يحتوي على بعض الكلماتِ الشائعة مثل و في من وبعض الترقيم 123 ؟! والتطويلـــــــات. الرابط هو http://example.com"
+    sample_english_text = "Hello world! This is an example of English text, with stopwords like the and a number 456. @user #topic"
+
+    print("Original Arabic:", sample_arabic_text)
+    processed_arabic = preprocess_text_pipeline(sample_arabic_text, use_stemming=True)
+    print("Processed Arabic:", processed_arabic)
+    print("-" * 30)
+    print("Original English:", sample_english_text)
+    processed_english = preprocess_text_pipeline(sample_english_text) # Stemming for English would need a different stemmer
+    print("Processed English:", processed_english)
+
+    # اختبار مع قيمة None أو NaN
+    nan_value = None
+    processed_nan = preprocess_text_pipeline(nan_value)
+    print(f"\nProcessed None: '{processed_nan}' (length: {len(processed_nan)})")
+
+    empty_string = ""
+    processed_empty = preprocess_text_pipeline(empty_string)
+    print(f"Processed Empty String: '{processed_empty}' (length: {len(processed_empty)})")
+
+    # src/data_processing/data_preprocessor.py
+import pandas as pd
+import numpy as np
+import os
+import logging
+from datetime import datetime
+
+# تأكد من أن مسارات الاستيراد صحيحة
+try:
+    from src.data_processing.database_connector import DatabaseConnector
+    from src.utils.text_processing import preprocess_text_pipeline
+except ImportError:
+    # معالجة بديلة للاستيراد إذا كنت تشغل السكربت بطريقة مختلفة أو لم يتم تعيين PYTHONPATH
+    import sys
+    # إضافة المسار الجذر للمشروع إلى sys.path
+    # يفترض أن هذا الملف موجود في problem_ai_advisor/src/data_processing
+    current_dir_preprocessor = os.path.dirname(os.path.abspath(__file__))
+    project_root_preprocessor = os.path.abspath(os.path.join(current_dir_preprocessor, '..', '..'))
+    if project_root_preprocessor not in sys.path:
+        sys.path.insert(0, project_root_preprocessor)
+    from src.data_processing.database_connector import DatabaseConnector
+    from src.utils.text_processing import preprocess_text_pipeline
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+class DataPreprocessor:
+    def __init__(self, db_connector: DatabaseConnector):
+        self.db_connector = db_connector
+        self.raw_data = None
+        self.processed_data = None
+
+    def load_data(self, limit: int = None) -> pd.DataFrame:
+        """
+        تحميل البيانات الخام من قاعدة البيانات.
+        """
+        logging.info("بدء تحميل البيانات الخام...")
+        try:
+            self.raw_data = self.db_connector.extract_problems_data(limit=limit)
+            logging.info(f"تم تحميل {len(self.raw_data)} سجل خام بنجاح.")
+            # عرض معلومات أساسية عن البيانات الخام
+            logging.info(f"أبعاد البيانات الخام: {self.raw_data.shape}")
+            logging.info(f"أول 3 صفوف من البيانات الخام:\n{self.raw_data.head(3)}")
+            logging.info(f"معلومات الأعمدة وأنواع البيانات الأولية:\n{self.raw_data.info()}")
+            return self.raw_data
+        except Exception as e:
+            logging.error(f"خطأ أثناء تحميل البيانات الخام: {e}")
+            raise
+
+    def _handle_missing_values(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        معالجة القيم المفقودة.
+        """
+        logging.info("بدء معالجة القيم المفقودة...")
+        # مثال: ملء النصوص المفقودة بنص فارغ، والأرقام بالوسيط أو المتوسط
+        for col in df.columns:
+            if df[col].dtype == 'object' or pd.api.types.is_string_dtype(df[col]):
+                df[col] = df[col].fillna('') # ملء النصوص المفقودة بنص فارغ
+            elif pd.api.types.is_numeric_dtype(df[col]):
+                # يمكنك اختيار الوسيط أو المتوسط أو قيمة ثابتة
+                df[col] = df[col].fillna(df[col].median()) # ملء الأرقام المفقودة بالوسيط
+
+        # يمكنك إضافة استراتيجيات أكثر تحديدًا لكل عمود إذا لزم الأمر
+        # مثال: df['sentiment_score'] = df['sentiment_score'].fillna(0)
+        logging.info("اكتملت معالجة القيم المفقودة.")
+        return df
+
+    def _convert_data_types(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        تحويل أنواع البيانات (مثلاً النصوص إلى تواريخ أو أرقام).
+        """
+        logging.info("بدء تحويل أنواع البيانات...")
+
+        # تحويل أعمدة التواريخ
+        date_columns = ['date_identified', 'date_closed', 'date_chosen',
+                        'start_date_planned', 'end_date_planned',
+                        'start_date_actual', 'end_date_actual']
+        for col in date_columns:
+            if col in df.columns:
+                # errors='coerce' سيحول القيم غير الصالحة إلى NaT (Not a Time)
+                df[col] = pd.to_datetime(df[col], errors='coerce')
+                logging.info(f"تم تحويل العمود '{col}' إلى datetime.")
+
+        # تحويل الأعمدة التي يجب أن تكون رقمية (مثال: sentiment_score)
+        # إذا كانت sentiment_score مقروءة كنص، ستحتاج لتحويلها
+        if 'sentiment_score' in df.columns and not pd.api.types.is_numeric_dtype(df['sentiment_score']):
+             # errors='coerce' سيحول القيم غير الرقمية إلى NaN
+            df['sentiment_score'] = pd.to_numeric(df['sentiment_score'], errors='coerce')
+            logging.info("تم تحويل العمود 'sentiment_score' إلى رقمي.")
+
+
+        # **مهم جداً: تحويل الأعمدة النصية التي تمثل تكلفة أو وقت**
+        # هذا الجزء يعتمد بشكل كبير على شكل البيانات الفعلية في هذه الأعمدة.
+        # سنحتاج لأمثلة منك على قيم مثل 'estimated_cost', 'estimated_time_to_implement'
+        # لنفترض حاليًا أن 'estimated_cost' قد تحتوي على أرقام كنصوص أو نصوص مثل "منخفض"
+        # مثال بسيط جداً (يحتاج إلى تحسين بناءً على بياناتك):
+        if 'estimated_cost' in df.columns:
+            # يمكنك هنا كتابة دالة أكثر تعقيدًا لاستخلاص الأرقام
+            # df['estimated_cost_numeric'] = df['estimated_cost'].apply(lambda x: extract_numeric_cost(x))
+            logging.warning("العمود 'estimated_cost' قد يحتاج إلى منطق تحويل مخصص لتحويله إلى رقمي.")
+
+        if 'overall_budget' in df.columns:
+             logging.warning("العمود 'overall_budget' قد يحتاج إلى منطق تحويل مخصص لتحويله إلى رقمي.")
+
+
+        logging.info("اكتمل تحويل أنواع البيانات.")
+        return df
+
+    def _engineer_features(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        هندسة ميزات جديدة.
+        """
+        logging.info("بدء هندسة الميزات...")
+
+        # حساب مدة حل المشكلة (بالأيام)
+        if 'date_identified' in df.columns and 'date_closed' in df.columns:
+            # تأكد أن الأعمدة من نوع datetime وأن القيم المفقودة معالجة (مثلاً NaT)
+            df['resolution_time_days'] = (df['date_closed'] - df['date_identified']).dt.days
+            # معالجة الحالات التي يكون فيها تاريخ الإغلاق قبل تاريخ التحديد أو إذا كانت القيم مفقودة
+            df['resolution_time_days'] = df['resolution_time_days'].apply(lambda x: x if pd.notna(x) and x >= 0 else np.nan)
+            logging.info("تم إنشاء الميزة 'resolution_time_days'.")
+
+        # إنشاء ميزة نصية مدمجة للتحليل
+        # هذه قائمة مقترحة، يمكنك تعديلها
+        text_fields_to_combine = [
+            'title', 'description_initial', 'refined_problem_statement_final',
+            'stakeholders_involved', 'initial_impact_assessment', 'problem_source',
+            'active_listening_notes', 'key_questions_asked', 'initial_hypotheses',
+            'key_findings_from_analysis', 'potential_root_causes_list', # هذا من المفترض أن يكون متاحًا الآن
+            'solution_description', 'justification_for_choice',
+            'what_went_well', 'what_could_be_improved', 'recommendations_for_future', 'key_takeaways'
+        ]
+        # تأكد أن جميع هذه الأعمدة موجودة في df ومعالجة القيم المفقودة فيها (مثلاً بـ '')
+        existing_text_fields = [col for col in text_fields_to_combine if col in df.columns]
+
+        logging.info(f"الأعمدة النصية التي سيتم دمجها: {existing_text_fields}")
+
+        # دمج النصوص مع التأكد من أنها سلاسل نصية
+        df['combined_text_for_nlp'] = df[existing_text_fields].astype(str).agg(' '.join, axis=1)
+        logging.info("تم إنشاء الميزة 'combined_text_for_nlp'.")
+
+
+        # تطبيق تنظيف النصوص على النص المدمج
+        logging.info("بدء تطبيق تنظيف النصوص على 'combined_text_for_nlp'...")
+        # قد يستغرق هذا بعض الوقت للبيانات الكبيرة
+        # يمكنك إضافة شريط تقدم هنا باستخدام tqdm إذا أردت
+        df['processed_text'] = df['combined_text_for_nlp'].apply(lambda x: preprocess_text_pipeline(x, use_stemming=False)) # التجذير اختياري
+        logging.info("اكتمل تنظيف النصوص لـ 'processed_text'.")
+
+
+        logging.info("اكتملت هندسة الميزات.")
+        return df
+
+    def preprocess(self, limit: int = None, save_processed_data: bool = True,
+                   processed_data_path: str = "data/processed/processed_problems_data.csv") -> pd.DataFrame:
+        """
+        خط أنابيب المعالجة الكامل.
+        """
+        # 1. تحميل البيانات
+        self.load_data(limit=limit)
+        if self.raw_data is None or self.raw_data.empty:
+            logging.error("لا توجد بيانات خام للمعالجة.")
+            return pd.DataFrame()
+
+        df = self.raw_data.copy()
+
+        # 2. معالجة القيم المفقودة
+        df = self._handle_missing_values(df)
+
+        # 3. تحويل أنواع البيانات
+        df = self._convert_data_types(df)
+
+        # 4. هندسة الميزات (بما في ذلك معالجة النصوص)
+        df = self._engineer_features(df)
+
+        self.processed_data = df
+        logging.info("اكتملت جميع خطوات المعالجة المسبقة.")
+        logging.info(f"أبعاد البيانات المعالجة: {self.processed_data.shape}")
+        logging.info(f"أول 3 صفوف من البيانات المعالجة (بعض الأعمدة):\n{self.processed_data[['problem_id', 'title', 'processed_text', 'resolution_time_days']].head(3)}")
+        logging.info(f"معلومات الأعمدة وأنواع البيانات النهائية:\n{self.processed_data.info()}")
+
+
+        if save_processed_data:
+            try:
+                # تأكد من أن المجلد 'data/processed/' موجود
+                os.makedirs(os.path.dirname(processed_data_path), exist_ok=True)
+                self.processed_data.to_csv(processed_data_path, index=False, encoding='utf-8-sig') # utf-8-sig للكتابة الصحيحة بالعربية في CSV
+                logging.info(f"تم حفظ البيانات المعالجة في: {processed_data_path}")
+            except Exception as e:
+                logging.error(f"خطأ أثناء حفظ البيانات المعالجة: {e}")
+
+        return self.processed_data
+
+# مثال للاختبار
+if __name__ == '__main__':
+    # هذا الجزء سيعمل بشكل صحيح إذا كان لديك اتصال صالح بقاعدة البيانات
+    # وملف config/database_config.py مهيأ بشكل صحيح
+    try:
+        db_connector_instance = DatabaseConnector() # يفترض أن config مهيأ بشكل صحيح
+        preprocessor = DataPreprocessor(db_connector=db_connector_instance)
+
+        # معالجة عينة صغيرة من البيانات للاختبار (مثلاً أول 10 مشاكل)
+        # إذا كانت قاعدة البيانات فارغة، هذا قد لا يعيد شيئًا
+        processed_df = preprocessor.preprocess(limit=10)
+
+        if not processed_df.empty:
+            print("\n--- عينة من البيانات المعالجة ---")
+            print(processed_df[['problem_id', 'title', 'domain', 'resolution_time_days', 'processed_text']].head())
+            print("\n--- معلومات البيانات المعالجة ---")
+            processed_df.info()
+        else:
+            print("لم يتم إنتاج أي بيانات معالجة. تحقق من البيانات الخام أو حد limit.")
+
+    except FileNotFoundError as e:
+        logging.error(f"خطأ في مسار ملف قاعدة البيانات، تأكد من إعدادات config: {e}")
+    except ConnectionError as e:
+        logging.error(f"خطأ في الاتصال بقاعدة البيانات: {e}")
+    except Exception as e:
+        logging.error(f"حدث خطأ غير متوقع أثناء اختبار DataPreprocessor: {e}", exc_info=True)
+    finally:
+        if 'db_connector_instance' in locals() and db_connector_instance.engine:
+            db_connector_instance.close_connection()
+
+
